@@ -1,0 +1,105 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root{
+    --dark1:#112D4E;
+    --dark2:#3F72AF;
+    --light1:#DBE2EF;
+    --light2:#F9F7F7;
+}
+
+.wrapper{
+    width:100vw;
+    height:100vh;
+    color:var(--light2);
+    background:linear-gradient(160deg,#112d4e,#3f72af);
+}
+
+h1{
+    text-align:center;
+    padding-top:20px;
+}
+
+.tab-container{
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    max-width:500px;
+    margin:40px auto;
+}
+
+.tab{
+    cursor:pointer;
+    padding:5px 10px;
+}
+
+.current-tab{
+    background:rgba(255,255,255,0.3);
+    border-radius:4px;
+}
+
+.weather-container{
+    margin-top:40px;
+}
+
+.btn{
+    all:unset;
+    background:var(--dark2);
+    padding:10px 30px;
+    border-radius:6px;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+.sub-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.grant-location-container,
+.form-container,
+.loading-container,
+.user-info-container{
+    display:none;
+}
+
+.active{
+    display:flex;
+}
+
+.form-container{
+    justify-content:center;
+    gap:10px;
+}
+
+.form-container input{
+    all:unset;
+    padding:10px 20px;
+    width:250px;
+    background:rgba(255,255,255,0.3);
+    border-radius:6px;
+}
+
+.parameter-container{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.parameter{
+    background:rgba(255,255,255,0.3);
+    padding:15px;
+    border-radius:6px;
+    text-align:center;
+    width:120px;
+}
+
+.parameter img{
+    width:40px;
+}
